@@ -1,0 +1,344 @@
+<!-- Benjawan Promthongnun
+ID 6502041520064 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wonderful Life</title>
+
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/jpg" href="./imgaes/logo.jpg" />
+
+    <!-- CSS -->
+    <link href="./css/styletrip.css" rel="stylesheet" />
+    <link href="./css/styleheader.css" rel="stylesheet" />
+    <!-- <link href="./css/styletraval.css" rel="stylesheet" /> -->
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .parallax-container {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        /*  this is where the magic happens:  */
+        background-attachment: fixed;
+
+        background-image: url("./imgaes/downtown1.gif");
+        background-position: center;
+        background-size: cover;
+        color: var(--color);
+        row-gap: 4rem;
+
+        text-align: center;
+      }
+
+      .parallax-container2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        padding: 6rem 0;
+        background-image: url("./imgaes/downtown2.gif");
+      }
+
+      .card:nth-of-type(1) .card-img {
+        background-image: url("./imgaes/pillar.png");
+      }
+
+      .card:nth-of-type(2) .card-img {
+        background-image: url("./imgaes/pracha.png");
+      }
+
+      .card:nth-of-type(3) .card-img {
+        background-image: url("./imgaes/sanchao.png");
+      }
+
+      .card:nth-of-type(4) .card-img {
+        background-image: url("./imgaes/lamphu.png");
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="content">
+        <header>
+          <a href="./index.html" class="logo">Wonderful Life</a>
+
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li>
+              <a href="./choosetrip.html" class="active">Trips</a>
+            </li>
+
+            <!-- <li><a href="./natural.html">Natural</a></li>
+            <li><a href="./downtown.html">Downtown</a></li>
+            <li><a href="./sea.html">Sea</a></li> -->
+            <li><a href="./about.html">About Me</a></li>
+          </ul>
+        </header>
+      </div>
+    </div>
+    <section class="parallax-container">
+      <div class="sec row col-12">
+        <div class="sec row col-12 box">
+          <h2
+            style="
+              text-align: center;
+              font-size: 7.5vw;
+              color: #fff;
+              margin-bottom: 90px;
+              margin-top: 40px;
+            "
+          >
+            Downtown
+          </h2>
+        </div>
+      </div>
+      <audio id="myaudio" class="myaudio" controls autoplay>
+        <source src="./music/wagzak.mp3" type="audio/mpeg" />
+      </audio>
+    </section>
+
+    <section class="buffer">
+      <div class="sec row col-12">
+        <div class="sec col-12 box">
+          <div class="col-8 contenttext">
+            <br /><br /><br />
+            <h2 style="text-align: center; font-size: 4vw; color: #060606">
+              Hey, I'm Sky.
+            </h2>
+            <br />
+            <center>
+              <p>
+                <br />
+                I'll take you downtown.
+                <br />
+                There are many things to see in the town. Let's go.
+              </p>
+            </center>
+
+            <br /><br /><br />
+          </div>
+          <div class="col-4">
+            <img src="./imgaes/sky1.png" id="sunshine1" style="width: 21vw" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="parallax-container parallax-container2">
+      <div class="card">
+        <div class="card-img"></div>
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          Surat Thani City Pillar Shrine
+        </h3>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn1" class="button-arounder">Read more</button>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          Pracha Rat Floating Market
+        </h3>
+
+        <button id="myBtn2" class="button-arounder">Read more</button>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <h3 style="margin-top: 10px; margin-bottom: 10px">San Chao Market</h3>
+
+        <button id="myBtn3" class="button-arounder">Read more</button>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          Ko Lamphu Public Park
+        </h3>
+
+        <button id="myBtn4" class="button-arounder">Read more</button>
+      </div>
+    </section>
+    <!-- The Modal -->
+    <div id="myModal1" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Surat Thani City Pillar Shrine</h2>
+        </div>
+        <div class="modal-body row col-12">
+          <div class="col-12">
+            <div class="col-6">
+              <img src="./imgaes/pillar.png" style="width: 100%" />
+            </div>
+            <div class="col-6">
+              <p
+                style="
+                  font-size: 1.5vw;
+                  color: #060606;
+                  margin-bottom: 90px;
+                  margin-top: 90;
+                  text-align: justify;
+                "
+              >
+                Pay homage to the Srivijaya-style City Pillar Shrine, the sacred
+                item of Surat Thani. This city pillar is made from wood of the
+                Golden Shower Tree (CasiaFitsula). It is 108 inches high with 20
+                inches diameter. The top of the pillar is carved into a 4-faced
+                Avalokite?vara Bodhisattva looking in the 4 directions. This is
+                a common style of the city pillars around Thailand. On the large
+                hair curls, there is a Buddha image in the attitude of
+                meditation which is considered as the guardian of the direction,
+                according to Srivijaya’s belief.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal2" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Pracha Rat Floating Market</h2>
+        </div>
+        <div class="modal-body row col-12">
+          <div class="col-12">
+            <div class="col-6">
+              <img src="./imgaes/pracha.png" style="width: 100%" />
+            </div>
+            <div class="col-6">
+              <p
+                style="
+                  font-size: 1.5vw;
+                  color: #060606;
+                  margin-bottom: 90px;
+                  margin-top: 90;
+                  text-align: justify;
+                "
+              >
+                The Pra Cha Rat traditional floating market is a must-visit when
+                you are in Surat Thani, Thailand. Located in Bang Bai Mai
+                Temple, this floating market is a traditional market surrounded
+                by water from all directions, accessed by boat, and displays a
+                wide variety of traditional and home-made products and goods, as
+                well as famous Thai delicacies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal3" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>San Chao Market</h2>
+        </div>
+        <div class="modal-body row col-12">
+          <div class="col-12">
+            <div class="col-6">
+              <img src="./imgaes/sanchao.png" style="width: 100%" />
+            </div>
+            <div class="col-6">
+              <p
+                style="
+                  font-size: 1.5vw;
+                  color: #060606;
+                  margin-bottom: 90px;
+                  margin-top: 90;
+                  text-align: justify;
+                "
+              >
+                San Chao Market (Surat Thani night market) is considered as a
+                famous night market in Surat Thani province. Everyone knows that
+                it is a famous nighttime spot of Surat Thani. There are many
+                unique shops on both sidewalks which sell Local Food for the
+                tourists.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal4" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Ko Lamphu Public Park</h2>
+        </div>
+        <div class="modal-body row col-12">
+          <div class="col-12">
+            <div class="col-6">
+              <img src="./imgaes/lamphu.png" style="width: 100%" />
+            </div>
+            <div class="col-6">
+              <p
+                style="
+                  font-size: 1.5vw;
+                  color: #060606;
+                  margin-bottom: 90px;
+                  margin-top: 90;
+                  text-align: justify;
+                "
+              >
+                The beautiful green Island park of Ko Lamphu on the river Mae
+                Nam Tapi is neatly landscaped around a central lake. There are
+                various sports courts (badminton, futsal, basketball and
+                volleyball) and picnic areas buzzing throughout the evening, as
+                well as lanes for cyclists and joggers. Ko Lamphu is Surat's
+                finest public green space and a wonderful place to sit and watch
+                locals literally at play.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="buffer">
+      <div class="sec row col-12">
+        <div class="sec col-12 box">
+          <div class="col-4">
+            <img src="./imgaes/sky2.png" id="sunshine1" style="width: 15vw" />
+          </div>
+          <div class="col-8 contenttext">
+            <h2
+              style="
+                text-align: center;
+                font-size: 4vw;
+                color: #060606;
+                margin-top: 50px;
+              "
+            >
+              Try A New Trip.
+            </h2>
+            <center>
+              <a href="./choosetrip.html">
+                <button
+                  id="gotrip"
+                  class="button-arounder"
+                  onclick="navigateTotrip('./choosetrip.html');"
+                  style="margin-bottom: 50px; font-size: 2vw"
+                >
+                  Try Now
+                </button>
+              </a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="./js/trip.js"></script>
+  </body>
+</html>

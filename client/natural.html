@@ -1,0 +1,339 @@
+<!-- Benjawan Promthongnun
+ID 6502041520064 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wonderful Life</title>
+
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/jpg" href="./imgaes/logo.jpg" />
+
+    <!-- CSS -->
+    <link href="./css/styletrip.css" rel="stylesheet" />
+    <link href="./css/styleheader.css" rel="stylesheet" />
+    <!-- <link href="./css/styletraval.css" rel="stylesheet" /> -->
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .parallax-container {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        /*  this is where the magic happens:  */
+        background-attachment: fixed;
+
+        background-image: url("./imgaes/bgnatural1.gif");
+        background-position: center;
+        background-size: cover;
+        color: var(--color);
+        row-gap: 4rem;
+
+        text-align: center;
+      }
+
+      .parallax-container2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        padding: 6rem 0;
+        background-image: url("./imgaes/bgnatural2.gif");
+      }
+
+      .card:nth-of-type(1) .card-img {
+        background-image: url("./imgaes/khaosok.png");
+      }
+
+      .card:nth-of-type(2) .card-img {
+        background-image: url("./imgaes/rajjaprabha.png");
+      }
+
+      .card:nth-of-type(3) .card-img {
+        background-image: url("./imgaes/watpchaiya.png");
+      }
+
+      .card:nth-of-type(4) .card-img {
+        background-image: url("./imgaes/namrat.png");
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="content">
+        <header>
+          <a href="./index.html" class="logo">Wonderful Life</a>
+
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li>
+              <a href="./choosetrip.html" class="active">Trips</a>
+            </li>
+
+            <!-- <li><a href="./natural.html">Natural</a></li>
+            <li><a href="./downtown.html">Downtown</a></li>
+            <li><a href="./sea.html">Sea</a></li> -->
+            <li><a href="./about.html">About Me</a></li>
+          </ul>
+        </header>
+      </div>
+    </div>
+    <section class="parallax-container">
+      <div class="sec row col-12">
+        <div class="sec row col-12 box">
+          <h2
+            style="
+              text-align: center;
+              font-size: 7.5vw;
+              color: #fff;
+              margin-bottom: 90px;
+              margin-top: 40px;
+            "
+          >
+            Natural
+          </h2>
+        </div>
+      </div>
+      <audio id="myaudio" class="myaudio" controls autoplay>
+        <source src="./music/wagzak.mp3" type="audio/mpeg" />
+      </audio>
+    </section>
+
+    <section class="buffer">
+      <div class="sec row col-12">
+        <div class="sec col-12 box">
+          <div class="col-8 contenttext">
+            <br /><br /><br />
+            <h2 style="text-align: center; font-size: 4vw; color: #060606">
+              Hey, I'm Star.
+            </h2>
+            <br />
+            <center>
+              <p>
+                <br />
+                I am responsible for showing you around nature.
+                <br />
+                There are many amazing things in Surat Thani. Let's go and see.
+              </p>
+            </center>
+
+            <br /><br /><br />
+          </div>
+          <div class="col-4">
+            <img src="./imgaes/star1.png" id="sunshine1" style="width: 21vw" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="parallax-container parallax-container2">
+      <div class="card">
+        <div class="card-img"></div>
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          Khao Sok National Park
+        </h3>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn1" class="button-arounder">Read more</button>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <h3 style="margin-top: 10px; margin-bottom: 10px">Rajjaprabha Dam</h3>
+
+        <button id="myBtn2" class="button-arounder">Read more</button>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <h3 style="margin-top: 10px; margin-bottom: 10px">
+          Wat Phra Borommathat Chaiya
+        </h3>
+
+        <button id="myBtn3" class="button-arounder">Read more</button>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <h3 style="margin-top: 10px; margin-bottom: 10px">Khlong Nam Sai</h3>
+
+        <button id="myBtn4" class="button-arounder">Read more</button>
+      </div>
+    </section>
+    <!-- The Modal -->
+    <div id="myModal1" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Khao Sok National Park</h2>
+        </div>
+        <div class="modal-body row col-12">
+          <div class="col-12">
+            <div class="col-6">
+              <img src="./imgaes/khaosok.png" style="width: 100%" />
+            </div>
+            <div class="col-6">
+              <p
+                style="
+                  font-size: 1.5vw;
+                  color: #060606;
+                  margin-bottom: 90px;
+                  margin-top: 90;
+                  text-align: justify;
+                "
+              >
+                Khao Sok is perfectly situated on the mainland between Phuket,
+                Krabi, Khao Lak and Koh Samui, the most popular destinations in
+                Southern Thailand. It is a fantastic place to go on vacation.
+                Close and personal elephant encounters, jungle trekking on foot
+                and canoeing are all possible activities, which will give you
+                the experience of a lifetime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal2" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Rajjaprabha Dam</h2>
+        </div>
+        <div class="modal-body row col-12">
+          <div class="col-12">
+            <div class="col-6">
+              <img src="./imgaes/rajjaprabha.png" style="width: 100%" />
+            </div>
+            <div class="col-6">
+              <p
+                style="
+                  font-size: 1.5vw;
+                  color: #060606;
+                  margin-bottom: 90px;
+                  margin-top: 90;
+                  text-align: justify;
+                "
+              >
+                Ratchaprapha Dam was originally called Cheow Lan Dam. It is the
+                second multi-purpose dam in the south, and it is located in
+                Surat Thani. When the building was constructed, His Majesty the
+                King bestowed a royal blessing on it. It was given a new name by
+                the King, "Ratchaprapha Dam" means "Light of the Reign"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal3" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Wat Phra Borommathat Chaiya</h2>
+        </div>
+        <div class="modal-body row col-12">
+          <div class="col-12">
+            <div class="col-6">
+              <img src="./imgaes/watpchaiya.png" style="width: 100%" />
+            </div>
+            <div class="col-6">
+              <p
+                style="
+                  font-size: 1.5vw;
+                  color: #060606;
+                  margin-bottom: 90px;
+                  margin-top: 90;
+                  text-align: justify;
+                "
+              >
+                Wat Phra Borommathat Chaiya Ratchaworawihan is located in Tambon
+                Wiang. The pagoda here is an ancient monument built with the
+                influence of the Mahayana sect of Buddhism in the Srivijaya
+                period. The pagoda is surrounded by small pagodas in the four
+                cardinal directions, Wat Phra Borommathat Chaiya Ratchaworawihan
+                and a cloister where ancient Buddha images in different sizes
+                are housed goes around the four sides. The pagoda is a revered
+                monument of importance in Buddhism of Surat Thani.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal4" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Khlong Nam Sai</h2>
+        </div>
+        <div class="modal-body row col-12">
+          <div class="col-12">
+            <div class="col-6">
+              <img src="./imgaes/namrat.png" style="width: 100%" />
+            </div>
+            <div class="col-6">
+              <p
+                style="
+                  font-size: 1.5vw;
+                  color: #060606;
+                  margin-bottom: 90px;
+                  margin-top: 90;
+                  text-align: justify;
+                "
+              >
+                “Khlong Nam Sai” was named after its physical feature as the
+                Canal’s water is so clear that people can see the ground and
+                fish. This canal is a natural pure watershed that runs down for
+                the livelihood of the people in the communities in Amphoe Khiri
+                Rat Nikhom.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="buffer">
+      <div class="sec row col-12">
+        <div class="sec col-12 box">
+          <div class="col-4">
+            <img src="./imgaes/star2.png" id="sunshine1" style="width: 15vw" />
+          </div>
+          <div class="col-8 contenttext">
+            <h2
+              style="
+                text-align: center;
+                font-size: 4vw;
+                color: #060606;
+                margin-top: 50px;
+              "
+            >
+              Try A New Trip.
+            </h2>
+            <center>
+              <a href="./choosetrip.html">
+                <button
+                  id="gotrip"
+                  class="button-arounder"
+                  onclick="navigateTotrip('./choosetrip.html');"
+                  style="margin-bottom: 50px; font-size: 2vw"
+                >
+                  Try Now
+                </button>
+              </a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="./js/trip.js"></script>
+  </body>
+</html>

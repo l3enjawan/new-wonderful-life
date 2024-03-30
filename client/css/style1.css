@@ -1,0 +1,284 @@
+/* Benjawan Promthongnun
+ID 6502041520064  */
+* {
+  margin: 0;
+  padding: auto;
+  box-sizing: border-box;
+  font-family: "Concert One", cursive;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(#536cc3, #c8b0d6);
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.box {
+  height: auto;
+  box-shadow: 10px 15px 40px #36486b;
+  padding: 20px;
+  text-align: center;
+  transition: ease all 0.5s;
+  background-color: transparent;
+  color: #2b1055;
+}
+
+div.content {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 50px 16px;
+  height: auto;
+  text-align: left;
+  font-size: 20px;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 24px; */
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background: #fff;
+  color: #2b1055;
+}
+
+a.active {
+  background: #fff;
+  color: #2b1055;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #536cc3, transparent);
+  z-index: 3;
+}
+
+.imgindex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#titlebg {
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 1;
+}
+
+.myaudio {
+  margin-top: 200px;
+  padding: 10, auto;
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  z-index: 4;
+}
+
+.sec {
+  padding: 100px;
+  background-color: #536cc3;
+  font-size: 20px;
+}
+.sec h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sec p {
+  font-size: 2 em;
+  color: #fff;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+button {
+  margin: auto;
+  border-radius: 20px;
+  background-color: #667292;
+  box-shadow: 10px 15px 40px #36486b;
+  width: 30vw;
+  height: 90px;
+  font-size: 50px;
+  font-family: Concert One;
+  /* color: #edf0f2; */
+  border: none;
+}
+
+button:hover {
+  border: none;
+  opacity: 1;
+  color: #36486b;
+  transition: 0.5s ease-in-out;
+  background: #8d9db6;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.btn-animation {
+  --color1: #ffffff;
+  --color2: #80b9eb;
+  font-family: Concert One;
+  text-align: center;
+  font-size: 46px;
+  background: repeating-linear-gradient(
+    5deg,
+    var(--color1),
+    var(--color1) 30px,
+    var(--color2) 30px,
+    var(--color2) 60px
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: 40s linear 0s infinite move;
+}
+
+@keyframes move {
+  from {
+    background-position: 0px;
+  }
+
+  to {
+    background-position: 1000px;
+  }
+}
+
+#navbar {
+  overflow: hidden;
+  z-index: 20;
+  float: right;
+  display: flex;
+  color: #f2f2f2;
+  text-align: left;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* #navbar div {
+  float: right;
+  display: flex;
+  color: #f2f2f2;
+  text-align: left;
+  text-decoration: none;
+  font-size: 17px;
+} */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}

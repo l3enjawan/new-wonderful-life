@@ -1,0 +1,90 @@
+<!-- Benjawan Promthongnun
+ID 6502041520064 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wonderful Life</title>
+
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/jpg" href="./imgaes/logo.jpg" />
+
+    <!-- CSS -->
+    <link href="./css/style1.css" rel="stylesheet" />
+    <link href="./css/swipebutton.scss" rel="stylesheet" />
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="content">
+        <header>
+          <a href="#" class="logo">Wonderful Life</a>
+          <ul>
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./choosetrip.html">Trips</a></li>
+            <li><a href="./about.html">About Me</a></li>
+            <li><a href="./login.html">Login</a></li>
+          </ul>
+        </header>
+      </div>
+    </div>
+
+    <section>
+      <img
+        src="./imgaes/mountain.png"
+        id="mountain"
+        class="imgindex"
+        style="z-index: 2"
+      />
+      <img src="./imgaes/sun.png" class="imgindex" id="sun" />
+
+      <h2 id="titlebg" style="margin-bottom: 20px">WELCOME</h2>
+
+      <audio id="myaudio" class="myaudio" controls autoplay>
+        <source src="./music/wagzak.mp3" type="audio/mpeg" />
+      </audio>
+    </section>
+
+    <div class="sec row col-12" id="sec">
+      <div class="col-5">
+        <img src="./imgaes/sunshine1.png" id="sunshine1" style="width: 100%" />
+      </div>
+
+      <div class="col-7">
+        <div style="text-align: center; font-size: 1.6vw">
+          <h2>
+            Hello, my name is Sunshine.
+            <br />
+            I will take you on a trip called Wonderful life in surat.
+            <br />
+            Are you ready to travel in this land of happiness with us?
+          </h2>
+          <div class="center">
+            <br />
+            <br />
+            <a href="./choosetrip.html">
+              <button
+                id="button-onclick"
+                class="btn-animation"
+                style="font-size: 3vw; cursor: pointer"
+              >
+                Let's Go !!!
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>

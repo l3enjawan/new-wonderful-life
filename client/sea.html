@@ -1,0 +1,353 @@
+<!-- Benjawan Promthongnun
+ID 6502041520064 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wonderful Life</title>
+
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/jpg" href="./imgaes/logo.jpg" />
+
+    <!-- CSS -->
+    <link href="./css/styletrip.css" rel="stylesheet" />
+    <link href="./css/styleheader.css" rel="stylesheet" />
+    <!-- <link href="./css/styletraval.css" rel="stylesheet" /> -->
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .parallax-container {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        /*  this is where the magic happens:  */
+        background-attachment: fixed;
+
+        background-image: url("./imgaes/sea1.gif");
+        background-position: center;
+        background-size: cover;
+        color: var(--color);
+        row-gap: 4rem;
+
+        text-align: center;
+      }
+
+      .parallax-container2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        padding: 6rem 0;
+        background-image: url("./imgaes/sea2.gif");
+      }
+
+      .card:nth-of-type(1) .card-img {
+        background-image: url("./imgaes/samui.png");
+      }
+
+      .card:nth-of-type(2) .card-img {
+        background-image: url("./imgaes/nangyuan.png");
+      }
+
+      .card:nth-of-type(3) .card-img {
+        background-image: url("./imgaes/tao.png");
+      }
+
+      .card:nth-of-type(4) .card-img {
+        background-image: url("./imgaes/phangan.png");
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="content">
+        <header>
+          <a href="./index.html" class="logo">Wonderful Life</a>
+
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li>
+              <a href="./choosetrip.html" class="active">Trips</a>
+            </li>
+
+            <!-- <li><a href="./natural.html">Natural</a></li>
+            <li><a href="./downtown.html">Downtown</a></li>
+            <li><a href="./sea.html">Sea</a></li> -->
+            <li><a href="./about.html">About Me</a></li>
+          </ul>
+        </header>
+      </div>
+    </div>
+    <section class="parallax-container">
+      <div class="sec row col-12">
+        <div class="sec row col-12 box">
+          <h2
+            style="
+              text-align: center;
+              font-size: 7.5vw;
+              color: #fff;
+              margin-bottom: 90px;
+              margin-top: 40px;
+            "
+          >
+            Sea
+          </h2>
+        </div>
+      </div>
+      <audio id="myaudio" class="myaudio" controls autoplay>
+        <source src="./music/wagzak.mp3" type="audio/mpeg" />
+      </audio>
+    </section>
+
+    <section class="buffer">
+      <div class="sec row col-12">
+        <div class="sec col-12 box">
+          <div class="col-8 contenttext">
+            <br /><br /><br />
+            <h2 style="text-align: center; font-size: 4vw; color: #060606">
+              Hey, I'm Moonlight
+            </h2>
+            <br />
+            <center>
+              <p>
+                <br />
+                I am responsible for taking you to the island to play with the
+                water.
+                <br />
+                Let's go and see what islands there are.
+              </p>
+            </center>
+
+            <br /><br /><br />
+          </div>
+          <div class="col-4">
+            <img src="./imgaes/moon1.png" id="sunshine1" style="width: 21vw" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="parallax-container parallax-container2">
+      <div class="card">
+        <div class="card-img"></div>
+        <h3 style="margin-top: 10px; margin-bottom: 10px">Samui Island</h3>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn1" class="button-arounder">Read more</button>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <h3 style="margin-top: 10px; margin-bottom: 10px">Nangyuan Island</h3>
+
+        <button id="myBtn2" class="button-arounder">Read more</button>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <h3 style="margin-top: 10px; margin-bottom: 10px">Tao Island</h3>
+
+        <button id="myBtn3" class="button-arounder">Read more</button>
+      </div>
+      <div class="card">
+        <div class="card-img"></div>
+        <h3 style="margin-top: 10px; margin-bottom: 10px">Pha-Ngan Island</h3>
+
+        <button id="myBtn4" class="button-arounder">Read more</button>
+      </div>
+    </section>
+    <!-- The Modal -->
+    <div id="myModal1" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Samui Island</h2>
+        </div>
+        <div class="modal-body row col-12">
+          <div class="col-12">
+            <div class="col-6">
+              <img src="./imgaes/samui.png" style="width: 100%" />
+            </div>
+            <div class="col-6">
+              <p
+                style="
+                  font-size: 1.5vw;
+                  color: #060606;
+                  margin-bottom: 90px;
+                  margin-top: 90;
+                  text-align: justify;
+                "
+              >
+                Samui is the third largest Island in Thailand and the largest in
+                an archipelago of more than 80 islands that includes the Ang
+                Thong National Marine Park, a kayaking paradise and day Trip
+                from Ko Samui. While Samui is small enough to be circumnavigated
+                in just a couple of hours by motorbike or car, the island
+                features such a variety of Beaches and activities that it would
+                be impossible to experience everything in a single visit. There
+                are so many beautiful beaches here like Chaweng, Lamai, Taling
+                Ngam, and Natien. Besides plentiful nature, the island is also
+                full of History and Culture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal2" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Nangyuan Island</h2>
+        </div>
+        <div class="modal-body row col-12">
+          <div class="col-12">
+            <div class="col-6">
+              <img src="./imgaes/nangyuan.png" style="width: 100%" />
+            </div>
+            <div class="col-6">
+              <p
+                style="
+                  font-size: 1.5vw;
+                  color: #060606;
+                  margin-bottom: 90px;
+                  margin-top: 90;
+                  text-align: justify;
+                "
+              >
+                Ko Nangyuan is located in KoPhaNgan District of SuratThani
+                Province. It consists of three islets linked together by sand
+                beaches. The island is a great diving site for coral reefs
+                viewing. Ko Nang Yaun is the property of the Treasury Department
+                and currently rented and operated by Nangyuan Island Dive
+                Resort. Ko Nang Yuan is an island of white fine sand and crystal
+                clear water that mostly suits tranquility lovers. Besides,
+                shallow-water and deep-water coral reefs, which are beautiful
+                and still intact, attract a regular visit by divers. Moreover, a
+                scenic viewpoint allows visitors to overlook a splendid line of
+                three beaches where the islands are connected and beautiful
+                sunrise and sunset.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal3" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Tao Island</h2>
+        </div>
+        <div class="modal-body row col-12">
+          <div class="col-12">
+            <div class="col-6">
+              <img src="./imgaes/tao.png" style="width: 100%" />
+            </div>
+            <div class="col-6">
+              <p
+                style="
+                  font-size: 1.5vw;
+                  color: #060606;
+                  margin-bottom: 90px;
+                  margin-top: 90;
+                  text-align: justify;
+                "
+              >
+                The tiny Island of Ko Tao ("Turtle Island"), 45 km north of Koh
+                Phangan, is one of the top scuba diving destinations in
+                Thailand. What’s more, the island, which is the site of
+                important breeding grounds for Hawksbill and Green turtles, is
+                now a centre for environmentally friendly diving practices,
+                including the reintroduction of hundreds of juvenile turtles to
+                the island's ecosystem and efforts to preserve and grow coral
+                reefs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal4" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Pha-Ngan Island</h2>
+        </div>
+        <div class="modal-body row col-12">
+          <div class="col-12">
+            <div class="col-6">
+              <img src="./imgaes/phangan.png" style="width: 100%" />
+            </div>
+            <div class="col-6">
+              <p
+                style="
+                  font-size: 1.5vw;
+                  color: #060606;
+                  margin-bottom: 90px;
+                  margin-top: 90;
+                  text-align: justify;
+                "
+              >
+                Ko Pha-ngan is one of the most famous islands in the world. It
+                is well known for the Full Moon Party held every full moon at
+                the beach of Hat Rin. A large number of tourists from all over
+                the world visit the island, especially in the summer. Apart from
+                beautiful beaches and amazing blue water, you can explore the
+                natural beauty of numerous natural attractions such as
+                waterfalls and mountains and discover the local lifestyle of
+                coconut farmers and fishermen in the village of Ban Chalok Lam.
+                As the island offers visitors all types of tourist attractions,
+                it is a must-visit destination for both Thai and foreign
+                tourists.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="buffer">
+      <div class="sec row col-12">
+        <div class="sec col-12 box">
+          <div class="col-4">
+            <img src="./imgaes/moon2.png" id="sunshine1" style="width: 15vw" />
+          </div>
+          <div class="col-8 contenttext">
+            <h2
+              style="
+                text-align: center;
+                font-size: 4vw;
+                color: #060606;
+                margin-top: 50px;
+              "
+            >
+              Try A New Trip.
+            </h2>
+            <center>
+              <a href="./choosetrip.html">
+                <button
+                  id="gotrip"
+                  class="button-arounder"
+                  onclick="navigateTotrip('./choosetrip.html');"
+                  style="margin-bottom: 50px; font-size: 2vw"
+                >
+                  Try Now
+                </button>
+              </a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="./js/trip.js"></script>
+  </body>
+</html>
